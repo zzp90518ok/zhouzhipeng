@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>周志鹏的个人主页</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+
+<body>
+<div id="main">
+  <div id="top">
+  	<div class="clearFix">
+    	<h1>-周志鹏的个人主页-</h1>
+    	<div id="nav"><a href="index.html">简介</a> <a href="zuji.html">足迹</a></div>
+    </div>
+    <p>出生日期：1990-05-18  /  联系电话：18012974002  /  邮箱：jiayuoyunhong@163.com<br>
+      毕业院校：黑龙江科技大学 / 学历：本科 / 专业：计算机科学与技术<br>
+      求职意向：Python全栈工程师, 爬虫工程师<br>
+      期望城市：北京 </p>
+  </div>
+  <div class="cont">
+    <h2>自我描述</h2>
+    <p>综合能力： 团队精神 | 抗压能力 | 适应能力 | 责任心 | 时间管理<br>
+      3年前端开发2年python全栈开发，精通Python后台，熟悉html、css、js、Linux命令，sql语句，基础扎实，<br>
+      有良好的编码习惯。对待工作认真负责、责任心强，与同事相处融洽，具有良好的团队协作意识。 </p>
+  </div>
+  <div class="cont">
+    <h2>技能清单</h2>
+    <ul>
+      <li>Web开发：Python/PHP</li>
+      <li>Web框架：Django/Flask/ThinkPHP/Yii/Lavarel</li>
+      <li>前端框架：Bootstrap/JQ/AngularJS/React/VUE</li>
+      <li>前端工具：Gulp/Grunt/webpack</li>
+      <li>数据存储：Mysql/redis/mongodb/Elasticsearch</li>
+      <li>爬虫相关：Requests/scrapy/scrapy-redis/Xpath</li>
+      <li>数据分析：numpy/pandas/matplotlib</li>
+      <li>版本管理、单元测试：Git/Composer/PHPUnit/selenium/unittest</li>
+      <li>环境部署：Linux+Django+uWSGI+Nginx、Linux+Apache+Mysql+PHP</li>
+    </ul>
+  </div>
+  <div class="cont">
+    <h2>工作经历</h2>
+    <div class="tit"> <span class="time">2014.03-2019.07</span> <span class="company">哈尔滨远游网络科技</span> <span class="job">全栈开发工程师</span> </div>
+    <p> <strong>工作内容：</strong><br>
+      1、按系统设计完成功能模块的编写；<br>
+      2、负责解决开发过程中的技术问题；<br>
+      3、负责网站的开发、维护和升级。<br>
+      4、抓取各大旅游平台的发团信息，旅游评论<br>
+      <strong>开发的中小型项目有：</strong><br>
+      1. 秋森格瓦斯官网<br>
+      2. 说走就走微信公众号<br>
+      3. 黑龙江对外劳务合作平台<br>
+      4. 省军区政工网<br>
+      5. 中药学类调研平台<br>
+      6. 中药评比系统 <br>
+      7. 据点创意GDAY官网 www.g-day.net<br>
+      8. 美国万脉集团官网 www.winmind.cc </p>
+  </div>
+  <div class="cont">
+    <h2>其他项目</h2>
+    <div class="item"> <strong>旅游信息爬取</strong><br>
+      <p>项目描述：爬取去哪，携程的旅游发团信息<br>
+        技术描述：<br>
+        1、基于Scrapy实现，去重模块使用Scrapy-Redis 中的 dupefilter 模块实现<br>
+        2、使用XPath（lxml）,正则（re）进行页面分析并提取出发团的日期，价格，供应商名，特色简介。存入mysql数据库中。爬取中需要设置time.sleep，不然会遇到爬不下来的情况<br>
+        3、构建USER-AGENT池，使用随机代理，随机IP采用阿布云动态IP，在中间件新增类，配置Key。需注意阿布云动态ip默认是1秒钟请求5次，当他是默认5次的时候，需要对爬虫进行限速 <br>
+        4、提取后的数据存入Mysql，使用numpy+pandas进行数据统计分析，再使用echarts进行图形化展示</p>
+    </div>
+    <div class="item"> <strong>说走就走旅游微信平台开发</strong><br>
+      <p>项目描述：<br>
+        说走就走是以腾讯微信公众号平台订阅号进行。进行旅游信息推广。建立与客户的连接。我负责项目整体的开发。项目是以开源的CMS进行开发。功能除开发文档中的接口外。另加入活动模块。抢红包游戏，抢话费游戏，世界杯压注。用户推广活动</p>
+    </div>
+    <div class="item"> <strong>北京纳通医疗CRM管理系统</strong><br>
+      <p>项目描述：北京纳通医疗CRM管理系统，主要用来维护与客户关系，发掘新客户，记录客户活动的，从而提升公司业绩。后端采用PHP编写的SugarCRM为基础进行的开发。前端分ios和android。<br>
+        个人职责：<br>
+        1、登录安全验证，二级密码验证，业务授权的权限，上下级的权限。<br>
+        2、客户关系管理模块，及客户关系的图形化展示<br>
+        3、建立和维护系统使用的数据字典。当数据字典有变更的时候需要及时修改<br>
+        4、使用nusoap实现 CRM系统到手机应用API等产品及业务的功能模块设计与实现<br>
+        5、负责数据库调优，sql语句的优化。<br>
+        6、参与产品需求的沟通、讨论和协调，建立并且持续维护开发文档 </p>
+    </div>
+    <div class="item"> <strong>哈尔滨e客网上超市</strong><br>
+      <p>项目描述：哈尔滨e客网上超市主要经营生鲜蔬菜、母婴用品、日常用品等以家居生活为中心的商品，下单后45分钟到货。致力于为顾客提供快捷、优质的网购服务，让顾客充分享受全新的生活方式和实惠方便的购物体验<br>
+        关键词：Django、Vue、restful、celery、sentry、mysql、redis；<br>
+        项目模块：用户信息、商品信息、商品搜索、购物车模块、支付模块、订单模块<br>
+        主要技术：<br>
+        1、用户信息、用户地址、用户订单、商品信息数据库数据表的设计<br>
+        2、使用django.core.mail，AJax，pillows，Celery完成用户验证工作<br>
+        3、运用邮箱验证／手机验证完成对用户密码修改的服务<br>
+        4、用户中心信息显示，及最近浏览的商品显示<br>
+        5、使用whoosh引擎和jieba词库实现了商品关键词检索功能。<br>
+        6、sentry实现错误日志监控</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

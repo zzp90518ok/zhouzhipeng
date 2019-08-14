@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,ul,li,ol,i,span,a,h1,h2,h3,h4,p{margin:0;padding:0;border:none}
+html,body{width:100%;height:100%;font-size:12px;font-family:'微软雅黑',Arial,Helvetica,sans-serif;}
+ol,ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;}
+
+.clearFix:after{clear:both;display:block;visibility:hidden;height:0;line-height:0;content:'';}
+.clearFix{zoom:1;}
+
+p{line-height:1.7;font-size:14px;}
+
+body{background:#e6e6e6}
+
+
+
+#main{width:998px;background:#fff;margin:0 auto;}
+#top{margin:0 40px;padding-top:35px;}
+#top h1{width:260px;height:57px;line-height:57px;background:#000;color:#fff;text-align:center;font-weight:normal;font-size:24px;margin-bottom:7px;float:left}
+
+#nav{font-size:16px;text-align:left;margin-bottom:20px;float:left;padding-top:30px;margin-left:100px}
+#nav a{padding:0 10px;color:#000}
+
+.cont{margin:20px 40px 0;}
+.cont h2{border-bottom:1px solid #000;font-weight:normal;padding:7px 0;margin-bottom:7px;}
+.cont ul{padding-top:10px;}
+.cont ul li{
+	list-style-type:disc;
+	list-style-position:inside;
+	line-height:1.7;font-size:14px;
+}
+.cont .tit{font-weight:bold;font-size:16px;height:40px;line-height:40px;}
+.cont .tit .time{float:left}
+.cont .tit .company{float:left;margin-left:150px;}
+.cont .tit .job{float:right;margin-right:20px;}
+
+.cont .item{padding-bottom:20px;}
+.cont .item strong{font-size:15px;padding:3px 0;display:inline-block; }
+
+#map{height:800px;width:998px;overflow:hidden}
+
+

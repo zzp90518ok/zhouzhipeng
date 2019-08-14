@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>周志鹏的个人主页</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link href="js/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="js/jquery-jvectormap-cn-merc-en.js"></script>
+</head>
+
+<body>
+<div id="main">
+  <div id="top">
+    <div class="clearFix">
+      <h1>-周志鹏的个人主页-</h1>
+      <div id="nav"><a href="index.html">简介</a> <a href="zuji.html">足迹</a></div>
+    </div>
+  </div>
+  <div id="map" style=""> </div>
+</div>
+<script>
+
+$(function(){
+
+	$('#map').vectorMap({
+		// 此处更改地图
+		map: 'cn_merc_en',   // 中国地图
+		backgroundColor: 'transparent',
+		zoomMin: 0.9, // 鼠标缩放时的最小比例
+		zoomMax: 1.5, // 鼠标缩放时的最大比例
+		focusOn: {
+			x: 0.55,
+			y: 2,
+			scale: 0.9
+		},
+		regionsSelectable:true,
+		regionStyle: {
+			initial: {
+				fill: '#e5e5e5',   
+				"fill-opacity": 1, 
+				stroke: 'none',
+				"stroke-width": 0,
+				"stroke-opacity": 1
+			},
+			hover: {
+				fill: '#ccc',  // 鼠标滑动至某省份的高亮颜色。
+				"fill-opacity": 0.8
+			},
+			selected: {
+				fill: 'yellow'
+			},
+			selectedHover: {},
+			
+		},
+		markerStyle: {
+			   initial: {
+				   fill: '#fd8888', // 足迹位置的填充颜色
+				   stroke: '#fff'   // 足迹位置的描边颜色
+			   },
+			hover: {
+				fill: '#fd2020', // 鼠标滑动至足迹位置后的填充颜色
+				stroke: '#fff',  // 鼠标滑动至足迹位置后的描边颜色
+				"fill-opacity": 0.8
+			},
+		},
+		markers: [ // 足迹位置
+			{latLng: [39.90, 116.41], name: '北京'},
+			{latLng: [31.24, 121.50], name: '上海'},
+			{latLng: [46.06, 122.06], name: '内蒙古 - 乌兰浩特'}
+		],
+		onRegionClick: function (e, code) {
+            console.log (code);
+        }
+	});
+});
+</script>
+</body>
+</html>
